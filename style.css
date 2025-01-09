@@ -74,7 +74,34 @@ html, body {
 
 .header {
   background-color: pink;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
+
+.placeholder-container {
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  align-items: center;
+}
+
+.magnify {
+  width: 25px;
+  height: 25px;
+  justify-self: end;
+  margin-right: 20px;
+}
+
+.placeholder {
+  display: grid;
+  grid-column-start: 2;
+  background-color: #E2E8F0;
+  width: 750px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  }
 
 .main-content {
   background-color: #E2E8F0;
