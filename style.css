@@ -77,6 +77,7 @@ html, body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding-bottom: 20px;
 }
 
 .placeholder-container {
@@ -102,33 +103,64 @@ html, body {
   border-radius: 10px;
   }
 
-  .profile-settings-container {
-    display: grid;
-    grid-template-columns: repeat(10, 50px);
-    align-items: center;
-  }
+.profile-settings-container {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  align-items: center;
+}
 
-  .notifications-logo {
-    width: 25px;
-    height: 25px;
-    margin-right: 20px;
-    grid-column-start: 6;
-    grid-column-end: 7;
-  }
+.notifications-logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
 
-  .profile-picture {
-    width: 40px;
-    border-radius: 20px;
-    grid-column-start: 7;
-    grid-column-end: 8;
-  }
+.profile-picture {
+  width: 40px;
+  border-radius: 20px;
+  grid-column-start: 7;
+  grid-column-end: 8;
+}
 
-  .profile-name {
-    margin-left: 20px;
-    font-weight: bold;
-    grid-column-start: 8;
-    grid-column-end: 11;
-  }
+.profile-name {
+  margin-left: 20px;
+  font-weight: bold;
+  grid-column-start: 8;
+  grid-column-end: 11;
+}
+
+.welcome-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.profile-picture-2 {
+  grid-column-end: 1;
+  width: 70px;
+  border-radius: 35px;
+  margin-right: 20px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.name-box {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.hi {
+font-weight: bold;
+font-size: 13px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 22px;
+}
 
 .main-content {
   background-color: #E2E8F0;
