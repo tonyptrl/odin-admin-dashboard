@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: #E2E8F0;
 }
 
 .container {
@@ -73,6 +74,7 @@ html, body {
 }
 
 .header {
+  background-color: white;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -182,10 +184,76 @@ button {
   padding: 10px 20px;
 }
 
-.main-content {
-  background-color: #E2E8F0;
+.main-content-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.your-projects-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card {
   background-color: white;
+  border-radius: 10px;
+  border-left: 5px solid #F0B42A;
+  width: 500px;
+  height: 200px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.card-content {
+  color: #9f9f9f;
+  font-size: 15px;
+}
+
+.bottom-card-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.card-icons-section {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.card-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon-star {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 25px;
+}
+
+.icon-eye {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 25px;
+}
+
+.icon-share {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 25px;
 }
