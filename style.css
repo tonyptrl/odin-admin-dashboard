@@ -209,6 +209,7 @@ button {
   height: 200px;
   margin: 20px;
   padding: 20px;
+  box-shadow: 5px 5px 12px -7px #000000;
 }
 
 .card-title {
@@ -257,3 +258,40 @@ button {
   grid-column-end: 4;
   width: 25px;
 }
+
+.announcements {
+  margin-right: 20px;
+}
+
+.announcements-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.announcements-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 12px -7px #000000;
+}
+
+.announcement-content-title {
+  font-weight: bold;
+}
+
+.announcement-content-text {
+  font-size: 15px;
+  color: #9f9f9f;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
