@@ -15,6 +15,8 @@ html, body {
   width: 100%;
 }
 
+/* Sidebar Section */
+
 .sidebar {
   display: grid;
   background-color: #1992D4;
@@ -28,7 +30,7 @@ html, body {
   padding: 20px;
 }
 
-.logo {
+.sidebar-logo {
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
@@ -39,39 +41,30 @@ html, body {
   gap: 10px;
 }
 
-.menu-1 {
+.main-menu {
   display: grid;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.home, .profile, .messages, .history, .tasks, .communities {
+.secondary-menu {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.main-menu img, .secondary-menu img {
+  width: 25px;
+}
+
+.menu-item {
   display: grid;
   grid-template-columns: 1fr 4fr;
   color: white;
   align-items: center;
 }
 
-.menu-1 img {
-  width: 25px;
-}
-
-.menu-2 {
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.settings, .support, .privacy {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  color: white;
-  align-items: center;
-}
-
-.menu-2 img {
-  width: 25px;
-}
+/* Header Section */
 
 .header {
   background-color: white;
@@ -82,20 +75,20 @@ html, body {
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-.placeholder-container {
+.search-container {
   display: grid;
   grid-template-columns: 1fr 8fr;
   align-items: center;
 }
 
-.magnify {
+.search-icon {
   width: 25px;
   height: 25px;
   justify-self: end;
   margin-right: 20px;
 }
 
-.placeholder {
+.search-input {
   display: grid;
   grid-column-start: 2;
   background-color: #E2E8F0;
@@ -105,13 +98,13 @@ html, body {
   border-radius: 10px;
   }
 
-.profile-settings-container {
+.profile-container {
   display: grid;
   grid-template-columns: repeat(10, 50px);
   align-items: center;
 }
 
-.notifications-logo {
+.notifications-icon {
   width: 25px;
   height: 25px;
   margin-right: 20px;
@@ -133,7 +126,7 @@ html, body {
   grid-column-end: 11;
 }
 
-.welcome-container {
+.welcome-message {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -149,22 +142,22 @@ html, body {
   grid-row-end: 3;
 }
 
-.name-box {
+.greeting {
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.hi {
-font-weight: bold;
-font-size: 13px;
+.hello {
+  font-weight: bold;
+  font-size: 13px;
 }
 
-.name {
+.user-name {
   font-weight: bold;
   font-size: 22px;
 }
 
-.header-buttons-container {
+.action-buttons {
   display: grid;
   justify-self: center;
   align-items: center;
@@ -184,19 +177,22 @@ button {
   padding: 10px 20px;
 }
 
-.main-content-container {
+/* Main Content Section */
+/* Left Panel: "Your Projects" */
+
+.main-content {
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
 
-.your-projects-title {
+.section-title {
   font-size: 18px;
   font-weight: bold;
   margin-left: 20px;
   margin-top: 20px;
 }
 
-.projects-cards {
+.cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -212,29 +208,29 @@ button {
   box-shadow: 5px 5px 12px -7px #000000;
 }
 
-.card-title {
+.card-header {
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 10px;
 }
 
-.card-content {
+.card-body {
   color: #9f9f9f;
   font-size: 15px;
 }
 
-.bottom-card-section {
+.card-footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
-.card-icons-section {
+.card-icons-wrapper {
   display: grid;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
-.card-icons {
+.icon-item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -259,7 +255,10 @@ button {
   width: 25px;
 }
 
-.announcements {
+/* Main Content Section */
+/* Right Panel : "Announcements" */
+
+.announcements-section {
   margin-right: 20px;
 }
 
@@ -269,7 +268,7 @@ button {
   margin-top: 20px;
 }
 
-.announcements-box {
+.announcements-list {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
@@ -278,11 +277,11 @@ button {
   box-shadow: 5px 5px 12px -7px #000000;
 }
 
-.announcement-content-title {
+.announcement-title {
   font-weight: bold;
 }
 
-.announcement-content-text {
+.announcement-description {
   font-size: 15px;
   color: #9f9f9f;
 }
@@ -296,12 +295,15 @@ hr {
   padding: 0;
 }
 
+/* Main Content Section */
+/* Right Panel : "Trending" */
+
 .trending-title {
   font-weight: bold;
   font-size: 18px;
 }
 
-.trending-box {
+.trending-list {
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 12px -7px #000000;
@@ -310,7 +312,7 @@ hr {
   padding: 30px;
 }
 
-.trending-card {
+.trending-item {
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
@@ -323,10 +325,10 @@ hr {
   margin-right: 15px;
 }
 
-.info-trending-title {
+.trending-profile-name {
   font-weight: bold;
 }
 
-.info-trending-content {
+.trending-profile-desc {
   color: #9f9f9f;
 }
