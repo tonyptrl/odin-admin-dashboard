@@ -9,8 +9,7 @@ html, body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: minmax(275px, 1fr) 6fr;
   height: 100%;
   width: 100%;
 }
@@ -20,7 +19,7 @@ html, body {
 .sidebar {
   display: grid;
   background-color: #1992D4;
-  grid-template-columns: minmax(225px, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 1fr 2fr;
   grid-row-start: 1;
   grid-row-end: 5;
